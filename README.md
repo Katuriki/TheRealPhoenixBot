@@ -1,5 +1,5 @@
 # Telegeek Manager
-   <img src "https://telegra.ph/file/f73f27df54c500cd78478.jpg"
+   <img src ="https://telegra.ph/file/f73f27df54c500cd78478.jpg"
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
 Originally a Marie fork, Pɧơɛnıх was created for personal use by [this person](https://t.me/TheRealPhoenix). Feel free to add it to your groups though!
