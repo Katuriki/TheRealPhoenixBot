@@ -34,7 +34,7 @@ the things I can help you with.
 If you have any questions on how to use me, head over to @PhoenixSupport
 
 *Main* commands available:
- - /start: start the bot
+ - /start: No need to explain.
  - /help: PM's you this message.
  - /help <module name>: PM's you info about that module.
  - /donate: information about how to donate!
