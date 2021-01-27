@@ -25,7 +25,7 @@ Hi {}, my name is {}!
 You can find the list of available commands with /help.
 """
 
-BOT_IMAGE = "https://telegra.ph/file/93612a540608640355f20.mp4"
+BOT_IMAGE = "https://telegra.ph/file/e038a4726aadb3a4d52a0.mp4"
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
@@ -46,9 +46,7 @@ If you have any questions on how to use me, head over to @PhoenixSupport
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-DONATE_STRING = """{0} doesn't currently need any donations.
-However you can donate to the creator of the original source code which {0} \
-is based on:- [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen).""".format(dispatcher.bot.first_name)
+DONATE_STRING = """ Wanna Thank {0}?. Join [Telegeeks](t.me/TelegeeksCommunity).""".format(dispatcher.bot.first_name)
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -149,15 +147,15 @@ def start(bot: Bot, update: Update, args: List[str]):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Add Pɧơɛnıх to your group.",
-                                url="t.me/{}?startgroup=botstart".format(bot.username),
+                                text="Join Telegeeks Community.",
+                                url="t.me/TelegeeksCommunity".,
                             )
                         ]
                     ]
                 ),
             )
     else:
-        update.effective_message.reply_text("Yo, why'd you summon me?")
+        update.effective_message.reply_text("Yo, What's up?")
 
 
 # for test purposes
