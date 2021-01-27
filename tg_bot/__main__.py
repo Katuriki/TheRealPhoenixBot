@@ -148,7 +148,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                         [
                             InlineKeyboardButton(
                                 text="Join Telegeeks Community.",
-                                url="t.me/TelegeeksCommunity".,
+                                url="t.me/TelegeeksCommunity",
                             )
                         ]
                     ]
