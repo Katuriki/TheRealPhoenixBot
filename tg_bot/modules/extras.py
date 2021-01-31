@@ -163,6 +163,68 @@ REACTS = (
 normiefont = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 weebyfont = ['卂','乃','匚','刀','乇','下','厶','卄','工','丁','长','乚','从','𠘨','口','尸','㔿','尺','丂','丅','凵','リ','山','乂','丫','乙']
 
+#------------------------------------------------- NEW CHANGES -------------------------------------------------#
+
+HUGGIFS = (
+	"CgACAgQAAxkDAAKtKWAWPvDQzymZYE4zWT8ivjJ6G5pkAAKUAAMs2fRRbPcLDMX3AAGAHgQ",
+	"CgACAgQAAxkDAAKtL2AWPyavfBBf4wyrQyHsf6dHid3wAALsAQACae-NU3JHmiaKMfOqHgQ",
+	"CgACAgQAAxkDAAKtN2AWP55KLNNpOXJU0UyeB8hMMXqEAAJ7AQACA86cU4RHPW_BAAEpVh4E",
+	"CgACAgQAAxkDAAKtO2AWP7NtOkslXYjq6qXL3EJQUV66AALdAAP99MVTKx2elmJaEjMeBA",
+	"CgACAgQAAxkDAAKtP2AWP8VnFsp6yrywv-2iX4jA-eqDAAKfAQACv1GdU252ZWJ_TtbSHgQ",
+	"CgACAgQAAxkDAAKtQ2AWP99wa-bphxo1b3p8gU7rq69VAAL-AQACUVf9U3I2SdRqFBJcHgQ",
+	"CgACAgQAAxkDAAKtSWAWP_qirZ25WOGRbZ3KeBRdYJkGAAL0AQACCt_MU_YPC5IEAtknHgQ",
+	"CgACAgQAAxkDAAKtTWAWQA0kksUzfHNPdrzbOmw0kegiAAKjAQACeO-UU2H4ey4L3UkfHgQ",
+	"CgACAgQAAxkDAAKtUWAWQCOA3ITFCjKbV-VLv_HgsaapAAKsAQACZiWVU1NvY0l0nYBnHgQ",
+	"CgACAgQAAxkDAAKtVWAWQDO7SY42m0eb8z04FmCetS4UAAJCAgACWAF0Uldjv5MN9PwWHgQ",
+	"CgACAgQAAxkDAAKtWmAWQFMzJEdRO5fnSeGyYVkVgY2pAAK8AQACuiScU1aiLbriqa0XHgQ",
+	"CgACAgQAAxkDAAKtXmAWQGRK2agj7zO5-Vg4IWNOUs70AALoAQACHnnEU1RE5kkv4s0cHgQ",
+	"CgACAgQAAxkDAAKtYmAWQHaOPjIySsTe5PJouBQLN5mgAAKrAQACzsysUhIRuelA17lqHgQ",
+	"CgACAgQAAxkDAAKtbmAWQJnWpYMt8JWt_MmeeoYoOhYVAAKmAQACThj8Urz0w4zEKkZeHgQ",
+	"CgACAgQAAxkDAAKtdGAWQLUaIrCfhB3cn40UfqOeI-bbAALfAQACccP9U2CzsfYG7UNPHgQ",
+	"CgACAgQAAxkDAAKtfGAWQM513ZYfWnFiuJQ8TaDoFdo0AAJ_AQAClXucU8fjO7H08A9BHgQ",
+	"CgACAgQAAxkDAAKtgGAWQN8c5N5U8I289b2aawABloz3kgACSwIAAknL7FOu9izxHo5EDh4E",
+	"CgACAgQAAxkDAAKthGAWQPWsZae6xGibEXN5EO8M4vzFAAKoAANkLuxR63tnHo6XLOYeBA",
+	"CgACAgQAAxkDAAKtjGAWQQ2tzIJ2jw2IZgtz8Nem9-9RAAJ9AQACCeK8U3d0oZPx9-HVHgQ",
+	"CgACAgQAAxkDAAKtkGAWQR4iPNNIvSajXwqq3_4aSx63AAK1AQACuBB0Ueqgjhzgvkv7HgQ",
+	"CgACAgQAAxkDAAKtlGAWQTrqpKdGb_YY3EBsEvzfSyCVAAJBAAN1QQVQXbzsyegB_e8eBA",
+	"CgACAgQAAxkDAAKtmGAWQU2xiYigT2iQJxxLS41u1vPTAAK6AQAC6pnsU4Z-jzDsQ1-oHgQ",
+	"CgACAgQAAxkDAAKtnGAWQWyxwaMXdZzrxiSbOCXfCLWrAAIVAgACBECVU7OnbJ-q9Jy9HgQ",
+	"CgACAgQAAxkDAAKtoGAWQX3Fhnp_lgHCpF-shta30auDAAJOAQACNiPdUeAtxKf7_fhcHgQ",
+	"CgACAgQAAxkDAAKtpGAWQY-jZUVPBMvwjac-SgJEE5nkAAKhAQAC7cqsUgSufNScfNR6HgQ",
+	"CgACAgQAAxkDAAKtrGAWQaXf_Wvl3UHHJyO1LkS33Q2FAAKNAQACpSStUpVpCQtevpTNHgQ",
+	"CgACAgQAAxkDAAKtumAWQcAGhcm7JCLKmx22NCfn9484AALWAQACId-0Uve1t_DLf5nUHgQ",
+	"CgACAgQAAxkDAAKtwGAWQdIsuuqFDuLrxAIGzOK7mDufAAKkAQAC1jgtUMfTecPUed37HgQ"
+	)
+
+
+@run_async
+def hug(bot: Bot, update: Update):
+    # reply to correct message 
+    reply_animation = update.effective_message.reply_to_message.reply_animation if update.effective_message.reply_to_message else update.effective_message.reply_animation
+    reply_animation = reply_animation(random.choice(HUGGIFS))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#------------------------------------------------- NEW CHANGES -------------------------------------------------#
 
 @run_async
 def shrug(bot: Bot, update: Update):
@@ -170,13 +232,6 @@ def shrug(bot: Bot, update: Update):
     reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
     reply_text = reply_text(random.choice(SHRUGS))
 
-
-@run_async
-def hug(bot: Bot, update: Update):
-    # reply to correct message 
-    reply_text = update.effective_message.reply_to_message.reply_text if update.effective_message.reply_to_message else update.effective_message.reply_text
-    reply_text = reply_text(random.choice(HUGS))
-    
     
 @run_async
 def toss(bot: Bot, update: Update):
